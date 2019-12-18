@@ -1,6 +1,6 @@
 FROM ruby:2.5.1
 
-ENV APP_PORT /app
+ENV APP_ROOT /app
 
 WORKDIR $APP_ROOT
 
