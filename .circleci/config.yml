@@ -29,7 +29,7 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker
-      - run
+      - run:
           name: install aws cli
           command: |
             apk add --no-cache --update py-pip
