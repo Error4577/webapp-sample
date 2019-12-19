@@ -11,9 +11,9 @@ jobs:
       - run:
           name: bundle update
           command: |
-            gem update --system
-            gem uninstall bundler
-            gem install bundler:2.0.2
+            sudo gem update --system
+            sudo gem uninstall -ax bundler
+            sudo gem install bundler:2.0.2
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "Gemfile.lock" }}
