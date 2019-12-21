@@ -10,7 +10,7 @@ ADD Gemfile.lock $APP_ROOT
 RUN \
   rm Gemfile.lock && \
   gem install bundler -v 2.0.2 && \
-  bundler 2.0.2 install && \
+  bundler install && \
   rm -rf ~/.gem
 
 ADD . $APP_ROOT
