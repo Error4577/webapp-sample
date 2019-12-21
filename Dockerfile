@@ -8,7 +8,6 @@ ADD Gemfile $APP_ROOT
 ADD Gemfile.lock $APP_ROOT
 
 RUN \
-  rm Gemfile.lock && \
   gem install bundler -v 2.0.2 && \
   bundler install && \
   rm -rf ~/.gem
