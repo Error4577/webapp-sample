@@ -1,4 +1,4 @@
-FROM ruby:2.5.1
+FROM ruby:2.6.3
 
 ENV APP_ROOT /app
 
@@ -9,8 +9,8 @@ ADD Gemfile.lock $APP_ROOT
 
 RUN \
   rm Gemfile.lock && \
-  gem install bundler:2.0.2 && \
-  bundle install && \
+  gem install bundler -v 2.0.2 && \
+  bundler 2.0.2 install && \
   rm -rf ~/.gem
 
 ADD . $APP_ROOT
