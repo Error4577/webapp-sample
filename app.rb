@@ -1,7 +1,7 @@
 require "sinatra"
 
 get "/" do
-  "Hello world!"
+  "Hello world! hogehoge"
 end
 
 get "/health_check" do
