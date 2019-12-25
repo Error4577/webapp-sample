@@ -1,4 +1,4 @@
-require "actice_record"
+require "active_record"
 require "mysql2"
 
 ActiveRecord::Base.configurations = {
