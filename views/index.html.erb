@@ -1,0 +1,25 @@
+<html>
+
+<head>
+  <title>Posts</title>
+</head>
+
+<body>
+  <form action="posts" method="POST">
+    <div>
+      title:<input type="text" name="title" value="">
+    </div>
+    <div>
+      <input type="submit" value="submit">
+    </div>
+  </form>
+  <div>
+    <ul>
+      <% @posts.each do |post| %>
+        <li><%= post.title %></li>
+      <% end %>
+    </ul>
+  </div>
+</body>
+
+</html>
