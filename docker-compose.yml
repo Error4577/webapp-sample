@@ -12,6 +12,11 @@ services:
     depends_on: 
       - db
     entrypoint: bash -c
+    environment:
+      RACK_ENV: production
+      DB_HOST: db
+      DB_USER: root
+      DB_PASSWORD: ""
     command: |
       "bundle install && \
       bundle exec ruby app.rb -o 0.0.0.0"
